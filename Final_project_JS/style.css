@@ -1,0 +1,141 @@
+.puzzle-block {
+    margin: auto;
+    width: 850px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.timer {
+    font-size: 55px;
+    text-align: center;
+}
+
+.button-block {
+    display: flex;
+    width: 400px;
+    height: 100px;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(231,69,66);
+    border-radius: 5px;
+    border: 0px;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(241, 241, 241);
+}
+
+.button:not([disabled]):hover {
+    cursor: pointer;
+    background-color: rgb(207, 50, 47);
+}
+
+.button:disabled {
+    background-color: rgb(255, 149, 148);
+}
+
+.puzzle-generation, .puzzle-solve {
+    width: 400px;
+    height: 400px;
+    border: 1px black solid;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.image-piece {
+    width: 100%;
+    height: 100%;
+    background-image: url('Arsenal.png');
+    background-size: 400% 400%;
+    cursor: pointer;
+}
+
+#piece-1 { background-position: 0% 0%; }
+#piece-2 { background-position: 33% 0%; }
+#piece-3 { background-position: 66% 0%; }
+#piece-4 { background-position: 99% 0%; }
+#piece-5 { background-position: 0% 33%; }
+#piece-6 { background-position: 33% 33%; }
+#piece-7 { background-position: 66% 33%; }
+#piece-8 { background-position: 99% 33%; }
+#piece-9 { background-position: 0% 66%; }
+#piece-10 { background-position: 33% 66%; }
+#piece-11 { background-position: 66% 66%; }
+#piece-12 { background-position: 99% 66%; }
+#piece-13 { background-position: 0% 99%; }
+#piece-14 { background-position: 33% 99%; }
+#piece-15 { background-position: 66% 99%; }
+#piece-16 { background-position: 99% 99%; }
+
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.modal-text {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close-button {
+    width: 85px;
+    height: 45px;
+    background-color: rgb(231,69,66);
+    border-radius: 5px;
+    border: 0px;
+    float: left;
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(241, 241, 241);
+}
+
+.close-button:hover {
+    background-color: rgb(204, 48, 45);
+    cursor: pointer;
+}
+
+.check-button {
+    width: 85px;
+    height: 45px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #28b455;
+    float: right;
+    display: none;
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(241, 241, 241);
+}
+
+.check-button:hover {
+    background-color: #188f3d;
+    cursor: pointer;
+}

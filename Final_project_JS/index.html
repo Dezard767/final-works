@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="puzzle">
+        <div class="timer-block">
+            <p class="timer">1:00</p>
+        </div>
+
+        <div class="button-block">
+            <button class="button start-button" disabled>Start game!</button>
+            <button class="button checkres-button" disabled>Check result</button>
+            <button class="button restart-button">New game</button>
+        </div>
+
+        <div class="puzzle-block">
+            <div class="puzzle-generation"></div>
+            <div class="puzzle-solve"></div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <hr>
+            <p class="modal-text"></p>
+            <hr>
+            <button class="close-button">Close</button>
+            <button class="check-button">Check</button>
+        </div>
+    </div>
+
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

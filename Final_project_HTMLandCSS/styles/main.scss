@@ -1,0 +1,8 @@
+@import './templates/fonts';
+@import './templates/reset';
+
+
+// Створив окремий файл, щоб @import max не був після купи коду
+@import './resolutions/above-1440';
+@import './resolutions/max-1440';
+@import './resolutions/max-1024';

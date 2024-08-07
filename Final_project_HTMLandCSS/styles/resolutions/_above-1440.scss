@@ -1,0 +1,402 @@
+.container {
+    width: 72%;
+    min-height: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__nav-cross {
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        top: 3%;
+        left: 16%;
+    }
+
+    &__cross_1 {
+        position: absolute;
+    }
+
+    &__cross_2 {
+        position: absolute;
+    }
+
+    &__nav-link {
+        cursor: pointer;
+    }
+
+    &__dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 27px;
+        width: 344px;
+        height: 289px;
+        background: #FFF;
+        box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.10);
+        padding: 44px 33px;
+    }
+
+    &__nav-cross:hover &__dropdown-menu {
+        display: block;
+    }
+
+    &__nav-link {
+        color: #000;
+        font-family: 'Kanit Medium';
+        font-size: 16px;
+        text-decoration: underline;
+        margin-bottom: 13px;
+    }
+
+    &__logo {
+        width: 157px;
+        height: 30px;
+    }
+
+    .li-margin {
+        margin-bottom: 13px;
+    }
+}
+
+.main {
+    width: 100%;
+    min-height: 1000px;
+
+    &__initial-block {
+        width: 100%;
+        height: 570px;
+        display: flex;
+    }
+
+    &__phillip-martin {
+        width: 50%;
+    }
+
+    &__lifestyle-block {
+        width: 50%;
+        background-color: black;
+        height: 570px;
+    }
+
+    &__lifestyle-additional-block {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__lifestyle-firstline-block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__lifestyle-date {
+        font-family: 'Kanit Medium';
+        font-size: 14px;
+        letter-spacing: 7px;
+        color: #FFFFFF;
+    }
+
+    &__p-lifestyle {
+        font-family: 'Kanit Medium';
+        font-size: 16px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    &__main-lifestyle-text {
+        font-family: 'Kanit Medium';
+        font-size: 28px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        padding-top: 35px;
+        padding-bottom: 36px;
+    }
+
+    &__lifestyle-text {
+        font-family: 'Kanit Light';
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 21px;
+    }
+
+    &__button-read-more {
+        width: 198px;
+        height: 55px;
+        border: 1px #FFFFFF solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 54px;
+    }
+
+    &__read-more {
+        font-family: 'Kanit Medium';
+        font-size: 12px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+    &__featured {
+        display: flex;
+        flex-direction: column;
+        margin: 61px 100px 0px 100px;
+    }
+
+    &__featured-heading {
+        color: #1F1F1D;
+        font-family: 'Kanit Medium';
+        font-size: 18px;
+        text-transform: uppercase;
+        padding-bottom: 34px;
+    }
+
+    &__article-date {
+        color: #000;
+        font-family: 'Kanit Medium';
+        font-size: 12px;
+        letter-spacing: 6px;
+    }
+
+    &__article-lifestyle {
+        color: #000;
+        font-family: 'Kanit Medium';
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration-line: underline;
+    }
+
+    &__article-heading {
+        color: #1F1F1D;
+        font-family: 'Kanit Medium';
+        font-size: 24px;
+        word-spacing: 4px;
+        line-height: 33px;
+        margin-bottom: 27px;
+        margin-top: 40px;
+    }
+
+    &__description {
+        color: #1F1F1D;
+        font-family: 'Kanit Light';
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__other-article-heading {
+        text-transform: uppercase;
+        color: #1F1F1D;
+        font-family: 'Kanit Medium';
+        font-size: 18px;
+        margin-top: 32px;
+    }
+
+    &__button-see-all {
+        width: 238px;
+        height: 42px;
+        margin: 0 auto;
+        margin-top: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #303030;
+        cursor: pointer;
+    }
+
+    &__see-all {
+        color: #FFF;
+        font-family: 'Kanit Light';
+        word-spacing: 2px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    &__heading-articles-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+
+    &__heading-article {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+
+    &__heading-image {
+        height: 368px;
+        width: 100%;
+        margin-bottom: 29px;
+    }
+
+    &__other-image {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+
+    &__information-block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__featured-other-articles-block {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 29px;
+        word-spacing: 2px;
+    }
+
+    &__other-articles-block {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 29px;
+    }
+
+    &__other-article {
+        width: 30%;
+    }
+
+    &__subscribe-block {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    &__subscribe-image {
+        width: 50%;
+    }
+
+    &__subscribe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        flex-direction: column;
+        background-color: black;
+        width: 50%;
+    }
+
+    &__subscribe-date {
+        color: #FFF;
+        font-family: 'Kanit Medium';
+        font-size: 34px;
+        text-transform: uppercase;
+        margin-bottom: 29px;
+        letter-spacing: 1px;
+    }
+
+    &__subscribe-button {
+        width: 198px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #FFFFFF;
+        cursor: pointer;
+    }
+
+    &__subscribe-text {
+        color: #FFF;
+        font-family: 'Kanit Medium';
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    &__interviews {
+        display: flex;
+        flex-direction: column;
+        margin: 61px 5% 0;
+    }
+
+    &__interviews-heading {
+        color: #1F1F1D;
+        font-family: 'Kanit Medium';
+        font-size: 18px;
+        text-transform: uppercase;
+        padding-bottom: 6px;
+    }
+
+    &__article-interviews {
+        color: #000;
+        font-family: 'Kanit Medium';
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration-line: underline;
+    }
+
+    &__second-button-see-all {
+        width: 238px;
+        height: 42px;
+        margin: 0 auto;
+        margin-top: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #303030;
+        cursor: pointer;
+        margin-top: 37px;
+    }
+
+    &__news {
+        display: flex;
+        flex-direction: column;
+        margin: 61px 5% 40px;
+    }
+
+    &__news-heading {
+        color: #1F1F1D;
+        font-family: 'Kanit Medium';
+        font-size: 18px;
+        text-transform: uppercase;
+        padding-bottom: 6px;
+    }
+
+    &__article-news {
+        color: #000;
+        font-family: 'Kanit Medium';
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration-line: underline;
+    }
+}
+
+.footer {
+    width: 100%;
+    min-height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: black;
+    padding: 53px 0 9px;
+
+    &__logo {
+        width: 142px;
+        height: 27px;
+    }
+
+    &__designed {
+        color: #FFF;
+        font-family: 'Kanit Light';
+        font-size: 12px;
+    }
+}
